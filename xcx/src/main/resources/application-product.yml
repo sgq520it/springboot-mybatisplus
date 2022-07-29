@@ -1,0 +1,20 @@
+server:
+  port: 8002
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Sgq@1234567
+    url: jdbc:mysql://39.105.159.114:3306/dev?serverTimezone=UTC
+  application:
+    name: xcxservice
+  cloud:
+    sentinel:
+      transport:
+        dashboard: 39.105.159.114:8080
+        port: 8719
+  main:
+    allow-circular-references: true
+logging:
+  level:
+    com.sgq.xcx.Mapper: debug
